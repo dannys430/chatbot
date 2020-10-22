@@ -88,30 +88,30 @@ module.exports = (controller) => {
       await bot.reply(message, "Welcome to my portfolio site!");
       // await bot.reply(message, "What do you want to know?");
       
-      // setTimeout(async () => {
-      //   await bot.changeContext(message.reference);
-      //   await bot.reply(message, { type: 'typing' });
-      // }, 1700)
+      setTimeout(async () => {
+        await bot.changeContext(message.reference);
+        await bot.reply(message, { type: 'typing' });
+      }, 1400)
       
-      // setTimeout(async () => {
-      //   await bot.reply(message, 'What do you want to know?');
-      // }, 3800);
+      setTimeout(async () => {
+        await bot.reply(message, 'I am currently seeking exciting career opportunities.');
+      }, 2800);
 
-      // setTimeout(async () => {
-      //   await bot.changeContext(message.reference);
-      //   await bot.reply(message, { type: 'typing' });
-      // }, 5700)
+      setTimeout(async () => {
+        await bot.changeContext(message.reference);
+        await bot.reply(message, { type: 'typing' });
+      }, 3300)
       
-      // setTimeout(async () => {
-      //   await bot.reply(message, "You can ask me about my background, experience, hobbies, and more.");
-      // }, 7900);
+      setTimeout(async () => {
+        await bot.reply(message, "You can ask me about my background, experience, skills, and more.");
+      }, 5000);
 
-      // setTimeout(async () => {
-      //   await bot.changeContext(message.reference);
-      //   await bot.reply(message, { type: 'typing' });
-      // }, 9300)
+      setTimeout(async () => {
+        await bot.changeContext(message.reference);
+        await bot.reply(message, { type: 'typing' });
+      }, 6300)
 
-      // setTimeout(async () => {
+      setTimeout(async () => {
         await bot.reply(message, {
           text: 'Here are some sample topics...',
           quick_replies: [
@@ -120,12 +120,28 @@ module.exports = (controller) => {
               payload: 'about me', // this is the message.text that triggers the appropriate function in background.js
             },
             {
-              title: 'Background',
-              payload: 'background',
+              title: 'Langauges',
+              payload: 'languages',
+            },
+            {
+              title: 'Skills',
+              payload: 'skills'
+            },
+            {
+              title: 'Work History',
+              payload: 'work'
+            },
+            {
+              title: 'Education',
+              payload: 'education'
+            },
+            {
+              title: 'Contact',
+              payload: 'contact'
             }
           ]
         });
-      // }, 10500);
+      }, 7800);
 
     });
 }
