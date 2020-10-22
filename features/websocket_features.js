@@ -25,7 +25,6 @@ module.exports = function(controller) {
             });
         });
 
-
     }
 
 }
