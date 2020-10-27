@@ -79,7 +79,7 @@ var Botkit = {
         that.deliverMessage({
             type: 'message',
             text: text,
-            payload: text.payload,
+            // payload: text.payload,
             user: this.guid,
             channel: this.options.use_sockets ? 'websocket' : 'webhook'
         });
